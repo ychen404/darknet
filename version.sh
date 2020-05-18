@@ -8,6 +8,10 @@ then
 elif [[ $1 == 'test' ]]
 then
     echo "Test"
+elif [[ $1 == 'empty' ]]
+then
+    git commit --allow-empty --allow-empty-message
+    git push origin master
 else
     echo "Please input argument"
 fi
