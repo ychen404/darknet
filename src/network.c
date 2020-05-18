@@ -55,7 +55,11 @@ network *load_network(char *cfg, char *weights, int clear)
     network *net = parse_network_cfg(cfg);
     if(weights && weights[0] != 0){
         load_weights(net, weights);
-        print("*load_network\n")
+	printf("------------------------------\n");
+	printf("%s\n", weights);
+        printf("*load_network\n");
+	printf("------------------------------\n");
+	
     }
     if(clear) (*net->seen) = 0;
     return net;
@@ -122,6 +126,7 @@ float get_current_rate(network *net)
 
 char *get_layer_string(LAYER_TYPE a)
 {
+    printf("get_layer_string");
     switch(a){
         case CONVOLUTIONAL:
             return "convolutional";
@@ -186,6 +191,18 @@ network *make_network(int n)
     return net;
 }
 
+void print_layer_type(layer l)
+{
+    char * type_str; 
+	if (l.type == 0)
+	  type_str = "Conv";
+	else if (l.type == 1)
+	   type_str = "Deconvolution";
+	else if (l.type == 3)
+	   type_str = "Maxpool";
+    printf("Type=%s\n", type_str);
+}
+
 void forward_network(network *netp)
 {
 #ifdef GPU
@@ -196,9 +213,24 @@ void forward_network(network *netp)
 #endif
     network net = *netp;
     int i;
+    //char * type_str; 
     for(i = 0; i < net.n; ++i){
         net.index = i;
         layer l = net.layers[i];
+	printf("---------- layer %d ----------\n",i);
+	print_layer_type(l);
+	printf("nweights=%d\n", l.nweights);
+	if (l.nweights == 0)
+	    printf("weights=null\n");
+	else {
+	    for (int i = 0; i < 5; i++) {
+	        printf("%d:%f, ", i, *l.weights);
+	    }
+	    printf("...\n");
+	}
+	printf("\n");
+	//printf("The address of weights=%x\n", l.weights);
+
         if(l.delta){
             fill_cpu(l.outputs * l.batch, 0, l.delta, 1);
         }

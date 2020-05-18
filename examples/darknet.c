@@ -40,7 +40,7 @@ void average(int argc, char *argv[])
         load_weights(net, weightfile);
         for(j = 0; j < net->n; ++j){
             layer l = net->layers[j];
-            printf("%s\n", l.nweights );
+           // printf("%d\n", l.nweights );
             layer out = sum->layers[j];
             if(l.type == CONVOLUTIONAL){
                 int num = l.n*l.c*l.size*l.size;
