@@ -22,8 +22,8 @@ decay=0.0005
 
 [convolutional]
 batch_normalize=1
-filters=3
-size=1
+filters=32
+size=3
 stride=1
 pad=1
 activation=leaky
@@ -31,6 +31,14 @@ activation=leaky
 [maxpool]
 size=2
 stride=2
+
+[convolutional]
+batch_normalize=1
+filters=64
+size=1
+stride=1
+pad=1
+activation=leaky
 
 [convolutional]
 filters=10

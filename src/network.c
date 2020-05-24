@@ -226,8 +226,9 @@ void forward_network(network *netp)
 	if (l.nweights == 0)
 	    printf("weights=null\n");
 	else {
+        printf("Layer %d  ", i);
 	    for (int j = 0; j < l.nweights; j++) {
-	        printf("%d:%f, ", j, *l.weights);
+	        printf("%d:%f, ", j, l.weights[j]);
             weights_counter += 1;
             // printf("weights_counter=%d", weights_counter);
 	    }

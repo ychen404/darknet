@@ -1,0 +1,277 @@
+--------------------------
+The number of args is 5
+arg 0 = ./darknet arg 1 = classifier arg 2 = train arg 3 = cfg/mnist.dataset arg 4 = cfg/mnist_lenet.cfg mnist_lenet
+1
+Learning Rate: 0.01, Momentum: 0.9, Decay: 5e-05
+3000
+28 28
+Loaded: 0.003765 seconds
+---------- layer 0 ----------
+Type=Conv
+nweights=9, type=0
+Layer 0  0:0.123610, 1:0.809239, 2:-0.888021, 3:0.754437, 4:0.721839, 5:-0.114217, 6:-1.037304, 7:-0.608333, 8:0.840966, 
+
+---------- layer 1 ----------
+Type=Maxpool
+nweights=0, type=3
+weights=null
+
+---------- layer 2 ----------
+Type=Other
+nweights=0, type=2
+weights=null
+
+---------- layer 3 ----------
+Type=Other
+nweights=0, type=4
+weights=null
+
+---------- layer 4 ----------
+Type=Other
+nweights=0, type=9
+weights=null
+
+1, 0.017: 1.644381, 1.644381 avg, 0.006561 rate, 0.005588 seconds, 50 images
+Loaded: 0.000016 seconds
+---------- layer 0 ----------
+Type=Conv
+nweights=9, type=0
+Layer 0  0:0.123269, 1:0.808898, 2:-0.888361, 3:0.753431, 4:0.720833, 5:-0.115224, 6:-1.037303, 7:-0.608333, 8:0.840966, 
+
+---------- layer 1 ----------
+Type=Maxpool
+nweights=0, type=3
+weights=null
+
+---------- layer 2 ----------
+Type=Other
+nweights=0, type=2
+weights=null
+
+---------- layer 3 ----------
+Type=Other
+nweights=0, type=4
+weights=null
+
+---------- layer 4 ----------
+Type=Other
+nweights=0, type=9
+weights=null
+
+2, 0.033: 1.585868, 1.638530 avg, 0.004096 rate, 0.001833 seconds, 100 images
+Loaded: 0.000015 seconds
+---------- layer 0 ----------
+Type=Conv
+nweights=9, type=0
+Layer 0  0:0.123226, 1:0.808855, 2:-0.888403, 3:0.752852, 4:0.720254, 5:-0.115802, 6:-1.037303, 7:-0.608333, 8:0.840966, 
+
+---------- layer 1 ----------
+Type=Maxpool
+nweights=0, type=3
+weights=null
+
+---------- layer 2 ----------
+Type=Other
+nweights=0, type=2
+weights=null
+
+---------- layer 3 ----------
+Type=Other
+nweights=0, type=4
+weights=null
+
+---------- layer 4 ----------
+Type=Other
+nweights=0, type=9
+weights=null
+
+3, 0.050: 1.574982, 1.632175 avg, 0.002401 rate, 0.001845 seconds, 150 images
+Loaded: 0.000016 seconds
+---------- layer 0 ----------
+Type=Conv
+nweights=9, type=0
+Layer 0  0:0.123127, 1:0.808755, 2:-0.888503, 3:0.752607, 4:0.720009, 5:-0.116047, 6:-1.037303, 7:-0.608332, 8:0.840965, 
+
+---------- layer 1 ----------
+Type=Maxpool
+nweights=0, type=3
+weights=null
+
+---------- layer 2 ----------
+Type=Other
+nweights=0, type=2
+weights=null
+
+---------- layer 3 ----------
+Type=Other
+nweights=0, type=4
+weights=null
+
+---------- layer 4 ----------
+Type=Other
+nweights=0, type=9
+weights=null
+
+4, 0.067: 1.587627, 1.627720 avg, 0.001296 rate, 0.001678 seconds, 200 images
+Loaded: 0.000014 seconds
+---------- layer 0 ----------
+Type=Conv
+nweights=9, type=0
+Layer 0  0:0.123165, 1:0.808793, 2:-0.888464, 3:0.752480, 4:0.719882, 5:-0.116173, 6:-1.037302, 7:-0.608332, 8:0.840965, 
+
+---------- layer 1 ----------
+Type=Maxpool
+nweights=0, type=3
+weights=null
+
+---------- layer 2 ----------
+Type=Other
+nweights=0, type=2
+weights=null
+
+---------- layer 3 ----------
+Type=Other
+nweights=0, type=4
+weights=null
+
+---------- layer 4 ----------
+Type=Other
+nweights=0, type=9
+weights=null
+
+5, 0.083: 1.594831, 1.624431 avg, 0.000625 rate, 0.001702 seconds, 250 images
+Loaded: 0.000015 seconds
+---------- layer 0 ----------
+Type=Conv
+nweights=9, type=0
+Layer 0  0:0.123177, 1:0.808806, 2:-0.888452, 3:0.752412, 4:0.719814, 5:-0.116242, 6:-1.037302, 7:-0.608332, 8:0.840965, 
+
+---------- layer 1 ----------
+Type=Maxpool
+nweights=0, type=3
+weights=null
+
+---------- layer 2 ----------
+Type=Other
+nweights=0, type=2
+weights=null
+
+---------- layer 3 ----------
+Type=Other
+nweights=0, type=4
+weights=null
+
+---------- layer 4 ----------
+Type=Other
+nweights=0, type=9
+weights=null
+
+6, 0.100: 1.580882, 1.620076 avg, 0.000256 rate, 0.001722 seconds, 300 images
+Loaded: 0.000141 seconds
+---------- layer 0 ----------
+Type=Conv
+nweights=9, type=0
+Layer 0  0:0.123168, 1:0.808797, 2:-0.888460, 3:0.752390, 4:0.719792, 5:-0.116264, 6:-1.037302, 7:-0.608332, 8:0.840965, 
+
+---------- layer 1 ----------
+Type=Maxpool
+nweights=0, type=3
+weights=null
+
+---------- layer 2 ----------
+Type=Other
+nweights=0, type=2
+weights=null
+
+---------- layer 3 ----------
+Type=Other
+nweights=0, type=4
+weights=null
+
+---------- layer 4 ----------
+Type=Other
+nweights=0, type=9
+weights=null
+
+7, 0.117: 1.555689, 1.613638 avg, 0.000081 rate, 0.001740 seconds, 350 images
+Loaded: 0.000015 seconds
+---------- layer 0 ----------
+Type=Conv
+nweights=9, type=0
+Layer 0  0:0.123161, 1:0.808790, 2:-0.888468, 3:0.752389, 4:0.719791, 5:-0.116264, 6:-1.037302, 7:-0.608332, 8:0.840965, 
+
+---------- layer 1 ----------
+Type=Maxpool
+nweights=0, type=3
+weights=null
+
+---------- layer 2 ----------
+Type=Other
+nweights=0, type=2
+weights=null
+
+---------- layer 3 ----------
+Type=Other
+nweights=0, type=4
+weights=null
+
+---------- layer 4 ----------
+Type=Other
+nweights=0, type=9
+weights=null
+
+8, 0.133: 1.581506, 1.610424 avg, 0.000016 rate, 0.001776 seconds, 400 images
+Loaded: 0.000185 seconds
+---------- layer 0 ----------
+Type=Conv
+nweights=9, type=0
+Layer 0  0:0.123160, 1:0.808789, 2:-0.888469, 3:0.752389, 4:0.719791, 5:-0.116264, 6:-1.037302, 7:-0.608332, 8:0.840965, 
+
+---------- layer 1 ----------
+Type=Maxpool
+nweights=0, type=3
+weights=null
+
+---------- layer 2 ----------
+Type=Other
+nweights=0, type=2
+weights=null
+
+---------- layer 3 ----------
+Type=Other
+nweights=0, type=4
+weights=null
+
+---------- layer 4 ----------
+Type=Other
+nweights=0, type=9
+weights=null
+
+9, 0.150: 1.616407, 1.611023 avg, 0.000001 rate, 0.001855 seconds, 450 images
+Loaded: 0.000015 seconds
+---------- layer 0 ----------
+Type=Conv
+nweights=9, type=0
+Layer 0  0:0.123160, 1:0.808788, 2:-0.888469, 3:0.752389, 4:0.719791, 5:-0.116264, 6:-1.037302, 7:-0.608332, 8:0.840965, 
+
+---------- layer 1 ----------
+Type=Maxpool
+nweights=0, type=3
+weights=null
+
+---------- layer 2 ----------
+Type=Other
+nweights=0, type=2
+weights=null
+
+---------- layer 3 ----------
+Type=Other
+nweights=0, type=4
+weights=null
+
+---------- layer 4 ----------
+Type=Other
+nweights=0, type=9
+weights=null
+
+10, 0.167: 1.538509, 1.603771 avg, 0.000000 rate, 0.001760 seconds, 500 images
