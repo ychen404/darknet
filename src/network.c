@@ -200,7 +200,9 @@ void print_layer_type(layer l)
 	   type_str = "Deconvolution";
 	else if (l.type == 3)
 	   type_str = "Maxpool";
-    printf("Type=%s\n", type_str);
+    else
+        type_str = "Other";
+printf("Type=%s\n", type_str);
 }
 
 void forward_network(network *netp)
@@ -214,19 +216,26 @@ void forward_network(network *netp)
     network net = *netp;
     int i;
     //char * type_str; 
+    int weights_counter = 0;
     for(i = 0; i < net.n; ++i){
         net.index = i;
         layer l = net.layers[i];
 	printf("---------- layer %d ----------\n",i);
 	print_layer_type(l);
-	printf("nweights=%d\n", l.nweights);
+	printf("nweights=%d, type=%d\n", l.nweights, l.type);
 	if (l.nweights == 0)
 	    printf("weights=null\n");
 	else {
-	    for (int i = 0; i < 5; i++) {
-	        printf("%d:%f, ", i, *l.weights);
+	    for (int j = 0; j < l.nweights; j++) {
+	        printf("%d:%f, ", j, *l.weights);
+            weights_counter += 1;
+            // printf("weights_counter=%d", weights_counter);
 	    }
-	    printf("...\n");
+
+        if (weights_counter == l.nweights)
+            printf("\n");
+        else
+            printf("...\n");
 	}
 	printf("\n");
 	//printf("The address of weights=%x\n", l.weights);

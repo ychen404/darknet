@@ -1059,11 +1059,16 @@ void demo_classifier(char *datacfg, char *cfgfile, char *weightfile, int cam_ind
 
 void run_classifier(int argc, char **argv)
 {
+    printf("--------------------------\n"); 
+    printf ("The number of args is %d\n", argc);
+    for (int i = 0; i < argc; i++)
+    {
+        printf("arg %d = %s ", i,argv[i]);
+    }
     if(argc < 4){
         fprintf(stderr, "usage: %s %s [train/test/valid] [cfg] [weights (optional)]\n", argv[0], argv[1]);
         return;
     }
-
     char *gpu_list = find_char_arg(argc, argv, "-gpus", 0);
     int ngpus;
     int *gpus = read_intlist(gpu_list, &ngpus, gpu_index);
